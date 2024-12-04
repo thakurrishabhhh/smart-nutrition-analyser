@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Analyzer</title>
+    <link rel="stylesheet" href="/static/css/abx.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Nutrition Analyzer</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="input-method">
+            <h2>Input Method</h2>
+            <div>
+                <label for="food-item">Enter Food Item:</label>
+                <input type="text" id="food-item" placeholder="e.g., Chicken Breast">
+                <button id="add-food">Add Food Item</button>
+            </div>
+            <div>
+                <label for="food-image">Upload Food Image:</label>
+                <input type="file" id="food-image" accept="image/*">
+                <button id="upload-image">Upload Image</button>
+            </div>
+        </section>
+
+        <button id="analyze-button">Analyze Nutritional Content</button>
+
+        <section class="results">
+            <h2>Nutritional Breakdown:</h2>
+            <p>Protein: <span id="protein">0</span> g</p>
+            <p>Carbohydrates: <span id="carbs">0</span> g</p>
+            <p>Fats: <span id="fats">0</span> g</p>
+            <p>Calories: <span id="calories">0</span> kcal</p>
+            <button id="save-results">Save Results</button>
+        </section>
+
+        <section class="additional-features">
+            <label><input type="checkbox" id="detailed-breakdown"> Include Detailed Breakdown</label>
+            <a href="#">View History</a>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Help Center</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
